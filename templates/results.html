@@ -1,0 +1,7 @@
+<div ng-repeat="result in results">
+	<span class="label label-success pull-right" ng-if="result.a * result.b == result.answer">Solved</span>
+    <span class="label label-warning pull-right" ng-if="result.a * result.b != result.answer">In-progress</span>
+
+    <h2 class="clearfix">{{result.a}} x {{result.b}}</h2>
+    <hr />
+</div>
